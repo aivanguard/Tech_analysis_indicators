@@ -1,0 +1,5 @@
+pandas
+twelvedata
+plotly
+streamlit
+python-dotenv
