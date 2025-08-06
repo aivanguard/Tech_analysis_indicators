@@ -25,6 +25,7 @@ Run it in Streamlit such as with the example provided
 
 
 Test it in the terminal with this example for Arm Holdings for an hourly period over 100 hours
+
 streamlit run ta_input.py 'ARM' 100 '1h'
 
 STep 4:
