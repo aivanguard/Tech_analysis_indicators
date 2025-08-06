@@ -31,6 +31,6 @@ STep 4:
 Create the python code for the dashboards and run it as a Streamlit app
 
 Disclaimer:
-Figure out your trading strategy with a multitude of indicators (e.g. volatility, volume, etc) taht you can get with Twelve data
+Figure out your trading strategy with a multitude of indicators (e.g. volatility, volume, etc) that you can get with Twelve data
 
   
