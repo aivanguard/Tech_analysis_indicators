@@ -23,10 +23,11 @@ def get_price_trend(ETF,num_periods,period,td):
     interval=period,)
 
   st.write(df_ts.with_bbands().with_atr().with_keltner().as_pandas().head(20))
-
+  df_ts.to_csv('ts_volume.csv')
+  
   st.title("Plotting price trends w/ tech indicators")
-  df = df_ts
-  df['datetime'] = df.index
+  df = pd.read_csv("ts_volume.csv")
+  #df['datetime'] = df.index
 
 
   fig1 = px.line(df,x='datetime',y=['lower_band','close','upper_band'] , title='Bollinger Bands Over Time')
@@ -46,4 +47,5 @@ if __name__ == '__main__':
   viz_ETF = 'ARM'
   num_periods = 100
   period = '1h'
+
   get_price_trend(viz_ETF,num_periods,period,td)
